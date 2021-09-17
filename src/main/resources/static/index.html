@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Chat de JhonZ</title>
+<link rel="stylesheet" href="/css/main.css" />
+</head>
+<body background="gta.jpg"
+	style="background-position: center; background-repeat: no-repeat; background-size: cover;">
+	<noscript>
+		<h2>¡Perdón! Su navegador no es compatible con Javascript</h2>
+	</noscript>
+
+	<div id="username-page">
+		<div class="username-page-container">
+			<h1 class="title">Ingrese su nombre de usuario</h1>
+			<form id="usernameForm" name="usernameForm">
+				<div class="form-group">
+					<input type="text" id="name" placeholder="Nombre de usuario"
+						autocomplete="off" class="form-control" />
+				</div>
+				<div class="form-group">
+					<button type="submit" class="accent username-submit">Empezar Chat</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="chat-page" class="hidden">
+		<div class="chat-container">
+			<div class="chat-header">
+				<h2>Chat Global de Z</h2>
+			</div>
+			<div class="connecting">Conectando...</div>
+			<ul id="messageArea">
+
+			</ul>
+			<form id="messageForm" name="messageForm" nameForm="messageForm">
+				<div class="form-group">
+					<div class="input-group clearfix">
+						<input type="text" id="message" placeholder="Escribe un mensaje..."
+							autocomplete="off" class="form-control" />
+						<button type="submit" class="primary">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+
+</html>
