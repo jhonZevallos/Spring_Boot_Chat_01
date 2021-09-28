@@ -1,2 +1,2 @@
-# Spring_Boot_Chat_01
-Es una aplicacion web de chat echo en spring (java)
+# Programa web de chat echo en spring boot
+Es una aplicacion web donde pueden hablar con las personas que se conecten en el mismo servidor,se registran con un nickname y listo ya puedes ingresar al servidor 
